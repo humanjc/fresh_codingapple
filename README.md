@@ -1,38 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Coding apple Next.js 강의 1강~6강
 
-## Getting Started
+https://www.youtube.com/watch?v=PCkiz2GUFg8
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Coding apple Next.js 교육과정
+
+https://codingapple.com/course/next-js/
+
+
+# 설치
+
+```
+npx create-next-app@13.2.4
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Need to install the following packages:
+create-next-app@13.2.4
+Ok to proceed? (y)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+√ What is your project named? ... <span style="color:red">fresh</span>  
+√ Would you like to use TypeScript with this project? ... <span style="color:red">No</span> / Yes  
+√ Would you like to use ESLint with this project? ... <span style="color:red">No</span> / Yes  
+√ Would you like to use `src/` directory with this project? ... <span style="color:red">No</span> / Yes  
+√ Would you like to use experimental `app/` directory with this project? ... <span style="color:red">No</span> / Yes  
+√ What import alias would you like configured? ... @/*  
+Creating a new Next.js app in [your_folder]\fresh.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Using npm.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Initializing project with template: app
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Installing dependencies:
+- react
+- react-dom
+- next
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+added 57 packages, and audited 58 packages in 14s
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+26 packages are looking for funding
+  run `npm fund` for details
 
-## Deploy on Vercel
+found 0 vulnerabilities
+Initialized a git repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Success! Created fresh at [your_folder]\fresh
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 버전 맞추기 (안해도 동작함)
+
+package.json
+
+```
+  "dependencies": {  
+    "next": "^13.2.4",  
+    "react": "^18.2.0",  
+    "react-dom": "^18.2.0"  
+  }
+```
+
+## 패키지 설치
+npm install
+
+## 실행
+npm run dev
+
+## 초기 세팅
+
+page.js
+
+```
+export default function Home() {
+  return (
+   <div>
+    
+   </div>
+  )
+}
+```
+
+global.css, page.modules.css 내용 지움
